@@ -1,0 +1,23 @@
+:root {
+    --primary-color: rgb(236, 72, 72);
+    --balck-color: #000;
+    --white-color: #fff;
+    --text-color: #333;
+    --boder-color: #999;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 16px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    max-width: 100%;
+    margin: 0 auto;
+}

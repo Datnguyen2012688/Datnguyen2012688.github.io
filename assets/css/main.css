@@ -1,0 +1,205 @@
+.galaxy {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 100px  auto auto auto;
+    /* animation: turn linear 30s infinite; */
+}
+
+
+/* mô hionhf tên lửa */
+
+.rocket {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    border: solid 1px var(--border-color);
+    position: absolute;
+    bottom: 33px;
+    left: 0px;
+    z-index: 3;
+    transition: ease-in-out 3s;
+}
+
+.galaxy:hover .rocket {
+    transform: translate(650px, -400px);
+}
+
+.rocket-img {
+    width: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: ease-in-out 3s;
+}
+
+.galaxy:hover .rocket-img {
+    transform: rotate(68deg);
+}
+
+.rocket2 {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    border: solid 1px var(--border-color);
+    position: absolute;
+    bottom: 33px;
+    right: 0px;
+    z-index: 3;
+    transition: ease-in-out 3s;
+}
+
+.galaxy:hover .rocket2 {
+    transform: translate(-650px, -400px);
+} 
+
+.rocket-img2 {
+    width: 60px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: ease-in-out 3s;
+}
+
+.galaxy:hover .rocket-img2 {
+    transform: rotate(-68deg);
+}
+
+.rocket3 {
+    width: 100px;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: ease-in-out 3s;
+}
+
+.galaxy:hover .rocket3 {
+    transform: translate(-50%, -400px);
+}
+
+.rocket-img3 {
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transition: transform ease-in-out 3s;
+}
+
+.galaxy:hover .rocket-img3 {
+    transform: rotate(360deg) ;
+}
+
+.rocket-img4 {
+    width: 40px;
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transition: transform ease-in-out 3s;
+}
+
+.galaxy:hover .rocket-img4 {
+    transform: translateX(-400px);
+}
+
+.rocket-img5 {
+    width: 40px;
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transition: transform ease-in-out 3s;
+}
+
+.galaxy:hover .rocket-img5 {
+    transform: translateX(360px);
+}
+
+/* mô hình tiểu hành tinh */
+
+.planet {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: xoay ease-in-out 10s infinite;
+}
+
+.planet2 {
+    position: absolute;
+    top: 34px;
+    right: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: xoaynguoclai ease-in-out 10s infinite;
+}
+
+
+
+/* các hàm chuyển động */
+
+/* tiểu hành tinh bên trái */
+
+@keyframes xoay {
+    from {
+        transform: rotate(0);
+        left: 0;
+    }
+    to {
+        transform: rotate(360deg);
+        left: calc(100% - 40px);
+    }
+}
+
+/*tiểu hành tinh bên phải */
+
+@keyframes xoaynguoclai {
+    from {
+        transform: rotate(0);
+        right: 0;
+    }
+    to {
+        transform: rotate(360deg);
+        right: calc(100% - 40px);
+    }
+}
+
+/* galaxy */
+@keyframes  turn {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* teen lửa só 4 */
+
+@keyframes Goleft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-300px);
+    }
+}
+
+
+@keyframes Goright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+
+
